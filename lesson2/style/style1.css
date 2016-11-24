@@ -4,42 +4,25 @@
     width: 300px;
     background-color: black;
     margin: 85px;
+    position: relative;
 }
 
 .redBlock {
     height: 150px;
     width: 150px;
     background-color: red;
+    position: absolute;
+    bottom: -75px;
+    left: -75px;
 }
 
 .blueBlock {
     height: 150px;
     width: 150px;
     background-color: blue;
-
-
-}
-
-.blueBlockPosition1 {
     position: absolute;
-    top: 15px;
-    left: 315px;
+    top: -75px;
+    right:  -75px;
+
 }
 
-.redBlockPosition1 {
-    position: absolute;
-    top: 310px;
-    left: 15px;
-}
-
-.blueBlockPosition2 {
-    position: absolute;
-    top: 395px;
-    left: 315px;
-}
-
-.redBlockPosition2 {
-    position: absolute;
-    top: 695px;
-    left: 15px;
-}
