@@ -42,21 +42,5 @@ tr:first-child td:first-child {
     border: none;
 }
 
- tr:hover td:nth-child(2n) {
-    background-color: white;
-}
 
- tr:hover td:nth-child(2n-1) {
-    background-color: white;
-}
 
-tr:hover td:nth-child(2n) {
-    background-color: white;
-}
-
-tr:hover td:nth-child(2n+1) {
-    background-color: black;
-}
-tr:hover td:first-child {
-    background-color: white;
-}
