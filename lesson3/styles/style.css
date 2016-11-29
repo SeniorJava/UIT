@@ -1,0 +1,29 @@
+.block {
+    display: inline-block;
+    text-align: center;
+    padding: 0 20px;
+    border-right: 1px solid;
+    margin:10px 0;
+}
+
+.block:last-child {
+	border: none;
+}
+
+.block p {
+    padding: 5px;
+}
+
+.titles {
+	color: orangered;
+    font-weight: 700;
+}
+
+.more {
+	text-decoration: none;
+    display: inline-block;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+}
