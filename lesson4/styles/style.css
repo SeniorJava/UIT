@@ -8,14 +8,18 @@ td {
    border: 1px solid black;
     height: 50px;
     width: 50px;
+    text-align: center;
+    font-size: 25px;
 }
 
 tr:nth-child(2n-1) td:nth-child(2n) {
     background-color: black;
+
 }
 
 tr:nth-child(2n) td:nth-child(2n-1) {
     background-color: black;
+
 }
 
 tr:first-of-type td:nth-child(n) {
@@ -43,4 +47,18 @@ tr:first-child td:first-child {
 }
 
 
+tr:nth-child(2n-1) td:nth-child(2n) span,
+tr:nth-child(2n) td:nth-child(2n-1) span {
+    -display: none;
+    color: red;
+}
 
+table tr:nth-child(2n-1) td:nth-child(2n) span:hover,
+table tr:nth-child(2n) td:nth-child(2n-1) span:nover {
+    -display: table-cell;
+    background-color: green;
+
+}
+    table tr:nth-child(5) td:nth-child(5) span:hover{
+        color: yellow;
+    }
