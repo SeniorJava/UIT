@@ -49,16 +49,13 @@ tr:first-child td:first-child {
 
 tr:nth-child(2n-1) td:nth-child(2n) span,
 tr:nth-child(2n) td:nth-child(2n-1) span {
-    -display: none;
+    display: none;
     color: red;
 }
 
-table tr:nth-child(2n-1) td:nth-child(2n) span:hover,
-table tr:nth-child(2n) td:nth-child(2n-1) span:nover {
-    -display: table-cell;
-    background-color: green;
-
+table tr:nth-child(2n-1) td:nth-child(2n):hover span,
+table tr:nth-child(2n) td:nth-child(2n-1):hover span {
+    display: inline;
 }
-    table tr:nth-child(5) td:nth-child(5) span:hover{
-        color: yellow;
-    }
+
+
