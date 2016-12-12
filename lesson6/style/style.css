@@ -1,0 +1,60 @@
+* {
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+}
+.menu {
+    font:3.4rem/4.2rem 'Arial Narrow';
+    margin:50px auto;
+    border:.2rem solid black;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-between;
+    align-items:stretch;
+    width:800px;
+    padding:.5rem 1rem;
+    text-shadow:2px 2px 3px black;
+    box-shadow:inset 2px 2px 3px 10px black;
+}
+.menu li {
+    border:.2rem solid black;
+    position:relative;
+}
+.menu a {
+    color:black;
+    display:block;
+    padding:1rem 1.5rem;
+}
+.menu a:hover {
+    background:grey;
+    color:white;
+}
+.menu ul {
+    position:absolute;
+    top:62px;
+    left:-2px;
+    width:300px;
+    border:.2rem solid black;
+    background:white;
+    height:0;
+    overflow:hidden;
+}
+.menu ul li {
+    border:none;
+    border-bottom:.2rem solid black;
+}
+.menu ul li:last-child {
+    border:none;
+}
+.menu > li:hover > ul {
+    height:auto;
+    overflow:visible;
+}
+.menu ul ul {
+    left:296px;
+    top:-2px;
+}
+.menu ul li:hover ul {
+    display:block;
+}
