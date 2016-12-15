@@ -1,0 +1,32 @@
+.street {
+    border-bottom: 2px dashed black;
+    position: relative;
+    background-color: azure;
+    height: 200px;
+}
+
+.street img{
+    position: absolute;
+}
+.car {
+    width:300px;
+
+}
+
+.wheel {
+    width: 60px;
+    bottom: 0;
+}
+
+img:nth-child(1) {
+    -left: 10px;
+}
+
+
+img.wheel:nth-child(1) {
+    left: 310px;
+}
+
+img.wheel:nth-child(2) {
+    left: 210px;
+}
