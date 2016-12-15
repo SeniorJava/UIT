@@ -19,14 +19,14 @@
 }
 
 img:nth-child(1) {
-    -left: 10px;
+    bottom:40px;
 }
 
 
-img.wheel:nth-child(1) {
-    left: 310px;
+img:nth-child(2) {
+    left: 15px;
 }
 
-img.wheel:nth-child(2) {
+img:nth-child(3) {
     left: 210px;
 }
