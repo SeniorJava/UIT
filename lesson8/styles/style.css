@@ -1,0 +1,20 @@
+.form {
+    border: 2px solid black;
+    width: 320px;
+    padding: 20px;
+}
+.formRow {
+    margin-bottom: 20px;
+}
+
+.formRow input {
+    border: 1px solid black;
+    height: 32px;
+    width: 100%;
+}
+
+.formRow.submit {
+    margin-bottom: 0;
+    width:;
+    background: white;
+}
