@@ -12,6 +12,10 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
 }
+
+h1, h2, h3 {
+    font-weight: bold;
+}
 h2 {
     font-size: 1.8rem;
 }
@@ -24,7 +28,7 @@ h3 {
     font-size: 1.4rem;
 }
 
-.psevdoH3 {
+.pseudoH3 {
     font-size: 1.4rem;
     font-weight: bold;
 }
@@ -33,13 +37,14 @@ p {
     font-size: 1.4rem;
 }
 
-header{
-    margin-bottom: 60px;
+header {
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 
-header a {
+header .headerLogo{
     display: block;
-    margin: 0 auto;
+    margin: 0 auto 60px;
     height: 52px;
     background-image: url(../assets/logo.png);
     background-repeat: no-repeat;
