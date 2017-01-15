@@ -1,0 +1,93 @@
+/* GLOBAL STYLES ______________________
+-------------------------------------*/
+
+* {
+    box-sizing:border-box;
+}
+html {
+    font-size:62.5%;
+
+}
+body {
+    color:#bbb;
+    background:#fefefe;
+    font:1.8rem/2.4rem 'Arial Narrow';
+    padding:0;
+    margin:0;
+}
+img {
+     width:100%;
+     max-width:100%;
+}
+/* MAIN STYLES ______________________
+-------------------------------------*/
+
+/* news     ---------*/
+.news {
+    display:flex;
+    flex-flow:column;
+    padding:20px 5vw;
+}
+.news h1 {
+    font:3.2rem 'Arial Narrow';
+    margin:0 0 2rem;
+    color:#333;
+}
+.news article {
+     margin:0 0 2rem;
+}
+.news img {
+    margin:0 0 1rem;
+}
+.news h2 {
+    font:2.1rem 'Arial Narrow';
+    margin:0 0 1rem;
+    color:#808080;
+}
+
+@media screen and (min-width:768px) {
+    /* MAIN STYLES ______________________
+    -------------------------------------*/
+
+    /* news     ---------*/
+    .items {
+        display:flex;
+        flex-flow:row wrap;
+        justify-content: space-between;
+    }
+    .news article {
+        width:calc(50% - 10px);
+    }
+}
+
+@media screen and (min-width:1170px) {
+    /* MAIN STYLES ______________________
+    -------------------------------------*/
+
+    /* news     ---------*/
+    .news {
+        flex-flow:row;
+        margin:0 auto;
+        padding:20px 0;
+        max-width:1170px;
+    }
+    .news h1 {
+        width:calc(25% - 10px);
+    }
+    .items {
+        width:calc(75% - 10px);
+    }
+    .news article {
+        width:calc((100% - 40px) / 3);
+    }
+}
+
+/*
+mobile first, content first
+
+1 - резиновый макет, все по возможности в 1 строчку
+2 - img {
+        width:100%;
+        max-width:100%;
+    }
+3 - meta тег и эмулятор.*/
