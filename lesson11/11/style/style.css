@@ -22,24 +22,24 @@ img {
 /* MAIN STYLES ______________________
 -------------------------------------*/
 
-/* news     ---------*/
-.news {
+/* doubleColl     ---------*/
+.doubleColl {
     display:flex;
     flex-flow:column;
     padding:20px 5vw;
 }
-.news h1 {
+.doubleColl h1 {
     font:3.2rem 'Arial Narrow';
     margin:0 0 2rem;
     color:#333;
 }
-.news article {
+.doubleColl article {
      margin:0 0 2rem;
 }
-.news img {
+.doubleColl img {
     margin:0 0 1rem;
 }
-.news h2 {
+.doubleColl h2 {
     font:2.1rem 'Arial Narrow';
     margin:0 0 1rem;
     color:#808080;
@@ -55,7 +55,7 @@ img {
         flex-flow:row wrap;
         justify-content: space-between;
     }
-    .news article {
+    .doubleColl article {
         width:calc(50% - 10px);
     }
 }
@@ -65,19 +65,19 @@ img {
     -------------------------------------*/
 
     /* news     ---------*/
-    .news {
+    .doubleColl {
         flex-flow:row;
         margin:0 auto;
         padding:20px 0;
         max-width:1170px;
     }
-    .news h1 {
+    .doubleColl h1 {
         width:calc(25% - 10px);
     }
-    .items {
+    .doubleColl .items {
         width:calc(75% - 10px);
     }
-    .news article {
+    .doubleColl article {
         width:calc((100% - 40px) / 3);
     }
 }
