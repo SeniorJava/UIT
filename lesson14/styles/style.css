@@ -1,0 +1,39 @@
+html {
+    font-size:62.5%;
+
+}
+
+body {
+    color: #fff;
+    background:#000;
+    font:1.4rem/2rem 'Open Sans';
+}
+
+img {
+
+    display: block;
+    width: 100%;
+    max-width:100%;
+
+}
+
+p {
+    color: ##4c4c4c;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+--------------------------
+
+h2 {
+    text-align: center;
+}
+
+.bottom {
+    padding: 10px 15px;
+    background-color: #e85356;
+}
