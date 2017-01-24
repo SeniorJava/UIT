@@ -1,0 +1,40 @@
+html {
+    font-size:62.5%;
+
+}
+
+body {
+    color:#bbb;
+    background:#fefefe;
+    font:1.8rem/2.4rem 'Open Sans';
+}
+
+img {
+    width: 100%;
+    display: block;
+    max-width: 100%
+}
+
+.doubleColl h2 {
+    font-size: 1.4rem;
+}
+
+.doubleColl p {
+    font-size: 1.2rem;
+}
+
+.doubleColl {
+    margin-top: 40px;
+    margin-bottom: 96px;
+}
+
+.doubleColl > h2 {
+    border-top: 1px dotted #bbb;
+    padding: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.article {
+    padding: 0;
+}

@@ -9,15 +9,23 @@ html {
 
 }
 body {
-    color:#bbb;
     background:#fefefe;
-    font:1.8rem/2.4rem 'Arial Narrow';
+    font:1.2rem/1.8rem 'Open Sans';
     padding:0;
     margin:0;
 }
 img {
-     width:100%;
-     max-width:100%;
+    width:100%;
+    max-width:100%;
+    display: block;
+}
+
+p {
+    color:#959595;
+}
+
+a {
+    text-decoration: none;
 }
 /* MAIN STYLES ______________________
 -------------------------------------*/
@@ -29,42 +37,68 @@ img {
     padding:20px 5vw;
 }
 .doubleColl h1 {
-    font:3.2rem 'Arial Narrow';
+    font:1.4rem/2.1rem 'Open Sans';
+    color: #565656;
     margin:0 0 2rem;
-    color:#333;
+    text-transform: uppercase;
+    border-bottom: .1rem dotted #565656;
+    -padding-top: 10px;
+    text-align: center;
 }
 .doubleColl article {
-     margin:0 0 2rem;
+    margin:0 0 2rem;
+    position: relative;
+    overflow: hidden;
 }
 .doubleColl img {
     margin:0 0 1rem;
 }
 .doubleColl h2 {
-    font:2.1rem 'Arial Narrow';
+    font:1.4rem/2.1rem 'Open Sans';
     margin:0 0 1rem;
-    color:#808080;
+    color:#565656;
+}
+
+.doubleColl .blind {
+    position: absolute;
+    bottom: 0;
+    padding: 0 15px;
+}
+.blind h2{
+    color:#fff;
+}
+
+.projects, .projects img, .projects article {
+    margin: 0;
 }
 
 @media screen and (min-width:768px) {
     /* MAIN STYLES ______________________
     -------------------------------------*/
 
-    /* news     ---------*/
+    /* blog     ---------*/
     .items {
         display:flex;
         flex-flow:row wrap;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
-    .doubleColl article {
+    .blog article {
         width:calc(50% - 10px);
+        padding-right: 40px;
     }
+
+    .projects article {
+        width:50%;
+    }
+
+
 }
 
 @media screen and (min-width:1170px) {
     /* MAIN STYLES ______________________
     -------------------------------------*/
 
-    /* news     ---------*/
+    /* blog     ---------*/
     .doubleColl {
         flex-flow:row;
         margin:0 auto;
@@ -73,12 +107,45 @@ img {
     }
     .doubleColl h1 {
         width:calc(25% - 10px);
+        font:1.4rem/2.1rem 'Open Sans';
+        border-bottom: none;
+        border-top:.1rem dotted #565656;
+        -padding-top: 10px;
+        text-align: left;
+        margin-right: 40px;
     }
     .doubleColl .items {
         width:calc(75% - 10px);
     }
-    .doubleColl article {
+/*
+    .blog article {
         width:calc((100% - 40px) / 3);
+    }
+*/
+    .blog article {
+        width:calc((100% - 60px)/3);
+        margin:0 20px 20px 0;
+    }
+    .blog article:nth-of-type(3n){
+        margin: 0 0 20px 0;
+    }
+    .doubleColl .blind {
+        top: -100%;
+        transition: top 1s;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-end;
+        background-color: rgba(0,0,0,.6);
+        height: 100%;
+        width: 100%;
+    }
+
+    .doubleColl article:hover .blind {
+        top: 0;
+    }
+
+    .projects article {
+        width: 25%;
     }
 }
 
