@@ -6,7 +6,7 @@ html {
 body {
     color: #fff;
     background:#000;
-    font:1.4rem/2rem 'Open Sans';
+    -font:1.4rem/2rem 'Open Sans';
 }
 
 img {
@@ -33,7 +33,36 @@ h2 {
     text-align: center;
 }
 
+li {
+    list-style-image: url(../img/list-el.png);
+}
+
+li a, a:hover {
+    color: #e85356;
+}
+
 .bottom {
     padding: 10px 15px;
     background-color: #e85356;
 }
+
+
+.secondSection{
+    background: url(../img/bg.png);
+}
+
+.verticalOffset{
+    height: 56px;
+}
+/*
+.secondSection>.col-md-6 {
+    height: 506px;
+    padding-top: 27px;
+}
+.firstSection>.col-sm-6{
+    padding-bottom: 56px;
+}
+.firstSection>.col-md-3 {
+    height: 443px;
+    padding-top: 27px;
+}*/
