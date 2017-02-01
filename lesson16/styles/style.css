@@ -1,0 +1,11 @@
+.slider img {
+    -display: block;
+}
+
+.slick-dots {
+    bottom: 100px;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #b7b7b7;
+}
