@@ -2,65 +2,31 @@
 -------------------------------
 */
 
-*{
-    box-sizing: border-box;
-}
-
 html {
-    font-size: 62.5%;
+    font-size:62.5%;
+
 }
 
 body {
-    color: #000;
-    background: #fff;
-    font: 1.6rem/2.4rem 'Arial Narrow', sans-serif;
+    font:1.2rem/1.8rem 'Open Sans';
 }
 
-/*Header styles
------------------------------
-*/
+img {
 
-.header {
-    box-shadow: 0 1px 5px 1px #000;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    background: #fefefe;
-}
-
-.logo {
-    color: #000;
-    font: 2.8rem/3.6rem 'Arial Narrow', sans-serif;
-    text-decoration: none;
-}
-
-
-.nav ul {
-    display: none;
-    position: fixed;
-    left: -300px;
-    top:0;
-    bottom:0;
-    padding: 50px 0 0;
-    background: #fff;
-}
-
-.nav::active ul{
-
-}
-
-.nav .humb {
-    height: 36px;
-    width:36px;
-    position: relative;
-    border-bottom: 4px solid #000;
-    text-indent: -9999px;
     display: block;
+    width: 100%;
+    max-width:100%;
+
 }
 
-.nav .hmb::before,.nav .hmb::after {
-    height: 4px;
-    background: #000;
-    display: block;
-    content: '';
+.h2, h2 {
+    font-size: 1.5rem;
+    line-height: 2.1rem;
+}
+
+.doubleColl > h2 {
+    border-top: 1px dotted #bbb;
+    padding: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
 }
