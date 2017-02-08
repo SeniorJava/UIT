@@ -3,22 +3,45 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styles/reset.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/slick.css">
     <link rel="stylesheet" href="styles/slick-theme.css">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Orion</title>
 </head>
 
 <body>
-    <section>
-        <header></header>
-        <div class="slider">
-            <div><img src="img/slide-1.png" alt=""></div>
-            <div><img src="img/slide-1.png" alt=""></div>
-            <div><img src="img/slide-1.png" alt=""></div>
-        </div>
-    </section>
+    <div class="container">
+       <header class="grid headerOrion">
+          <a href="#">
+                   <span class="logoSprite sprite-O"></span>
+                   <span class="logoSprite sprite-R"></span>
+                   <span class="logoSprite sprite-I"></span>
+                   <span class="logoSprite sprite-O"></span>
+                   <span class="logoSprite sprite-N"></span>
+            </a>
+           <nav class="nav">
+               <span class="humb"></span>
+               <ul class="navList">
+                   <li><a href="">SERVICES</a></li>
+                   <li><a href="">HOW</a></li>
+                   <li><a href="">OUR WORK</a></li>
+                   <li><a href="">TESTIMONIALS</a></li>
+                   <li><a href="">TEAM</a></li>
+                   <li><a href="">CONTACT US</a></li>
+                   <li><a href="">SIGN IN</a></li>
+               </ul>
+           </nav>
+       </header>
+        <main class="">
+            <section class="slider">
+                <div><img src="img/sl1.png" alt=""></div>
+                <div><img src="img/sl2.png" alt=""></div>
+                <div><img src="img/sl3.png" alt=""></div>
+            </section>
+        </main>
+    </div>
     <script src="js/jquery/jquery-3.1.1.min.js"></script>
     <script src="js/slick/slick.min.js"></script>
     <script>
@@ -26,9 +49,12 @@
             dots: true
             , infinite: true
             , speed: 400
+            , arrows: false
             , slidesToShow: 1
-            , adaptiveHeight: true
-            , autoplay: true
+                //            , centerMode: true
+                //            , adaptiveHeight: true
+
+            , autoplay: false
         });
     </script>
 </body>
