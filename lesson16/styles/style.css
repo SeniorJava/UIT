@@ -58,9 +58,13 @@ img {
     position: absolute;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     z-index: 2;
     width: 100%;
+    padding: 0 5vw;
+
 }
+
 
 /*Logo-----------------*/
 .logoSprite {
@@ -98,6 +102,19 @@ img {
 .navList a {
     color: #fff;
 }
+.nav ul {
+    position: fixed;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    padding: 50px 0 0 ;
+    transition: left 1s ease-in;
+}
+
+.nav.active ul{
+    left: 5px;
+}
 
 .humb:before {
     content: "\2261";
@@ -116,5 +133,18 @@ img {
     .grid {
         padding: 0 7.5%;
         max-width: 1350px;
+    }
+    .humb{
+        display: none;
+    }
+    .nav ul {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        width: auto;
+    }
+    .nav ul li {
+        margin: 0 0 0 20px;
     }
 }
