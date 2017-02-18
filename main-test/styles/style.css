@@ -1,0 +1,103 @@
+/*Global----------------------
+----------------------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 1.2rem/1.8rem 'Roboto';
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+img {
+
+/*
+    width: 100%;
+    max-width: 100%;
+*/
+
+}
+
+.container {
+
+}
+
+
+
+/*Header--------------------
+--------------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 0 5vw;
+
+}
+
+
+/*Logo-----------------*/
+.header .logo{
+    height: 7vh;
+    background-color: aqua;
+    background-image:  url(../img/design/logo.png);
+}
+
+/*Nav--------------*/
+.nav,
+.navList a {
+    color: #fff;
+}
+.nav ul {
+    position: fixed;
+    width: 300px;
+    left: -300px;
+    top: 0;
+    bottom: 0;
+    padding: 50px 0 0 ;
+    transition: left 1s ease-in;
+}
+
+.nav.active ul{
+    left: 5px;
+}
+
+.humb:before {
+    content: "\2261";
+    font: 5rem "arial";
+}
+
+
+
+@media screen and (min-width:768px) {
+    .grid {
+
+    }
+}
+
+@media screen and (min-width:1170px) {
+    .grid {
+
+    }
+    .humb{
+        display: none;
+    }
+    .nav ul {
+        position: static;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        width: auto;
+    }
+    .nav ul li {
+
+    }
+}
